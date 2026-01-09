@@ -41,7 +41,8 @@ public class ServerConfig extends ConfigBase {
 
         convertingTime = builder
                 .comment("The time in ticks the converter takes to convert a villager")
-                .defineInRange("converter.converting_time", 20 * 60 * 5, 20, Integer.MAX_VALUE);
+                .defineInRange("converter.converting_time", 20 * 60 * 1, 20, Integer.MAX_VALUE);
+
 
         farmSpeed = builder
                 .comment("The chance that a crop grows a stage in a farmer")
@@ -56,7 +57,7 @@ public class ServerConfig extends ConfigBase {
 
         golemSpawnTime = builder
                 .comment("The time in ticks the iron farm takes to spawn a golem")
-                .defineInRange("iron_farm.spawn_time", 20 * 60 * 4, 20 * 10 + 1, Integer.MAX_VALUE);
+                .defineInRange("iron_farm.spawn_time", 20 * 60 * 1, 20 * 10 + 1, Integer.MAX_VALUE);
 
         traderMinRestockTime = builder
                 .comment("The minimum amount of time in ticks the trader takes to restock")
